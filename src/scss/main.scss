@@ -1,5 +1,6 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
 // General Styling
 * {
@@ -28,6 +29,32 @@ a {
 
 ul, ol {
     list-style: none;
+}
+
+// Header
+.header {
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('../images/rocky-rock-cat.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+    &__title {
+        font-size: 3rem;
+        text-align: center;
+        color: #f5f5f5;
+        margin-top: 5rem;
+        text-shadow: 1.5px -1.5px 0 #000, 1.5px -1.5px 0 #000, -1.5px 1.5px 0 #000, 1.5px 1.5px 0 #000;
+
+    }
+
+    &__span {
+        display: block;
+        font-size: 4rem;
+        font-family: 'Permanent Marker', cursive;
+        color: maroon;
+        text-shadow: 1.5px -1.5px 0 #fff, 1.5px -1.5px 0 #fff, -1.5px 1.5px 0 #fff, 1.5px 1.5px 0 #fff;
+    }
 }
 
 // Navigation
@@ -88,15 +115,10 @@ ul, ol {
 
             li {
                 padding: 15px;
-                background-color: rgba(0, 0, 0, 0.1);
-                color: maroon;
+                background-color: rgb(0, 0, 0);
+                color: #fff;
                 margin-bottom: 1px;
                 cursor: pointer;
-
-                &:hover {
-                    background-color: maroon;
-                    color: #fff;
-                }
 
                 a {
                     color: inherit;
@@ -123,15 +145,11 @@ ul, ol {
 
             li {
                 padding: 15px;
-                color: maroon;
+                color: #fff;
                 margin-bottom: 1px;
                 cursor: pointer;
                 border-radius: 10px;
-
-                &:hover {
-                    background-color: rgba(0, 0, 0, 0.5);
-                    color: #fff;
-                }
+                background-color: rgba(0, 0, 0, 0.5);
 
                 a {
                     color: inherit;

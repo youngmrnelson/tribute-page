@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -25,6 +26,28 @@ a {
 
 ul, ol {
   list-style: none;
+}
+
+.header {
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../images/rocky-rock-cat.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.header__title {
+  font-size: 3rem;
+  text-align: center;
+  color: #f5f5f5;
+  margin-top: 5rem;
+  text-shadow: 1.5px -1.5px 0 #000, 1.5px -1.5px 0 #000, -1.5px 1.5px 0 #000, 1.5px 1.5px 0 #000;
+}
+.header__span {
+  display: block;
+  font-size: 4rem;
+  font-family: "Permanent Marker", cursive;
+  color: maroon;
+  text-shadow: 1.5px -1.5px 0 #fff, 1.5px -1.5px 0 #fff, -1.5px 1.5px 0 #fff, 1.5px 1.5px 0 #fff;
 }
 
 .nav {
@@ -75,14 +98,10 @@ ul, ol {
 }
 .nav .dropdown ul li {
   padding: 15px;
-  background-color: rgba(0, 0, 0, 0.1);
-  color: maroon;
+  background-color: rgb(0, 0, 0);
+  color: #fff;
   margin-bottom: 1px;
   cursor: pointer;
-}
-.nav .dropdown ul li:hover {
-  background-color: maroon;
-  color: #fff;
 }
 .nav .dropdown ul li a {
   color: inherit;
@@ -104,14 +123,11 @@ ul, ol {
   }
   .nav__links li {
     padding: 15px;
-    color: maroon;
+    color: #fff;
     margin-bottom: 1px;
     cursor: pointer;
     border-radius: 10px;
-  }
-  .nav__links li:hover {
     background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
   }
   .nav__links li a {
     color: inherit;
