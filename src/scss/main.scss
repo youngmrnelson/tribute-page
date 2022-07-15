@@ -20,7 +20,12 @@ html {
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
+    text-align: center; 
     background-color: #f4f4f4;
+}
+
+h2 {
+    color: maroon;
 }
 
 a {
@@ -37,10 +42,10 @@ ul, ol {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 85vh;
 
     &__title {
-        font-size: 3rem;
+        font-size: min(3.3rem, 6vh);
         text-align: center;
         color: #f5f5f5;
         margin-top: 5rem;
@@ -100,7 +105,6 @@ ul, ol {
             background-color: rgba(0, 0, 0, 0.5);
             padding: 15px 20px;
             cursor: pointer;
-            text-align: center;
         }
         
         ul {
@@ -156,6 +160,47 @@ ul, ol {
                     text-decoration: none;
                 }
             }
+        }
+    }
+}
+
+// Tribute Info
+.main {
+    margin: 2rem auto;
+    width: min(95%, 1000px);
+
+    figure {
+        margin-bottom: 2rem;
+        border-bottom: 2px solid #ccc;
+
+        img {
+            max-width: 40vw;
+            height: 100%;
+        }
+
+        figcaption {
+            margin-bottom: 1rem;
+        }
+    }
+
+    p {
+        font-size: 1.3rem;
+        margin-bottom: 3rem;
+        line-height: 1.75rem;
+    }
+
+    &__btn {
+        margin-bottom: 1.5rem;
+        padding: 1rem;
+        background: maroon;
+        color: #fff;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        font-size: 1.3rem;
+
+        &:hover {
+            filter: brightness(90%);
         }
     }
 }
