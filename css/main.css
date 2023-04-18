@@ -28,6 +28,10 @@ a {
     margin: 0 auto;
 }
 
+.section {
+    padding-block: 46px;
+}
+
 .flex {
     display: flex;
 }
@@ -78,6 +82,14 @@ a {
 h1, h2, h3 {
     font-family: 'Sedgwick Ave Display', cursive;
 }
+
+.section-header {
+    text-align: center;
+}
+
+.section-header-text {
+    font-size: 2.4rem;
+}
 /* Navigation */
 .nav {
     background-color: var(--ny-navy-blue);
@@ -120,6 +132,7 @@ h1, h2, h3 {
     text-align: center;
     color: var(--ny-gray);
     padding: 12px 24px;
+    border-bottom: 1px solid var(--ny-gray);
 }
 
 .header-title {
@@ -141,6 +154,10 @@ h1, h2, h3 {
     content: "\"";
 }
 
+/* Main Content */
+.main {
+
+}
 /* Media Queries */
 @media(min-width: 767px) {
     /* Utilities */
