@@ -38,6 +38,42 @@ a {
     gap: 12px;
 }
 
+.flex-header {
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.flex-gap-l {
+    gap: 32px;
+}
+
+.btn {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    display: inline-block;
+    cursor: pointer;
+    padding: 12px 24px;
+    border-radius: 10px;
+}
+
+.btn-header {
+    align-self: flex-start;
+    margin: 0 auto;
+    background-color: var(--ny-gray);
+    color: var(--ny-navy-blue);
+}
+
+.btn-header:hover {
+    border: 1px solid var(--ny-gray);
+    color: var(--ny-gray);
+    font-weight: 600;
+    background-color: transparent;
+}
+
 .nav .nav-logo,
 h1, h2, h3 {
     font-family: 'Sedgwick Ave Display', cursive;
@@ -67,14 +103,42 @@ h1, h2, h3 {
 .nav .nav-link {
     font-size: 1.6rem;
     font-weight: 600;
-    background-color: var(--ny-blue);
     border-radius: 10px;
     padding: 8px 16px;
 }
 
-.nav .nav-link:hover {
+.nav .nav-link:hover,
+.nav .nav-link-current {
     background-color: var(--ny-gray);
     color: var(--ny-navy-blue);
+}
+
+/* Header */
+.header {
+    background: linear-gradient(rgba(0, 48, 135, 1), rgba(0, 0, 0, 0)), url('../images/hero-img-min.jpg') no-repeat center center/cover;
+    height: 100vh;
+    text-align: center;
+    color: var(--ny-gray);
+    padding: 12px 24px;
+}
+
+.header-title {
+    font-size: 12rem;
+}
+
+.header-title-alt {
+    font-size: 16rem;
+    color: var(--ny-red);
+}
+
+.header-quote {
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.header-quote-text::before,
+.header-quote-text::after {
+    content: "\"";
 }
 
 /* Media Queries */
