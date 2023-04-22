@@ -1,12 +1,8 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 /* Variables */
 :root {
-    --ny-blue: #003087;
-    --ny-red: #e4002c;
-    --ny-navy-blue: #0c2340;
-    --ny-gray: #c4ced3;
     --dark: #333;
     --light: #f4f4f4;
 }
@@ -21,6 +17,15 @@ html, body {
 
 a {
     text-decoration: none;
+    color: var(--dark);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /* Utilities */
 .container {
@@ -72,31 +77,23 @@ a {
 
 .btn-header {
     margin: 0 auto;
-    background-color: var(--ny-gray);
-    color: var(--ny-navy-blue);
 }
 
 .btn-primary {
-    background-color: var(--dark);
-    color: var(--light);
+
 }
 
 .btn-primary:hover {
-    border: 1px solid var(--dark);
-    color: var(--dark);
-    background-color: transparent;
+
 }
 
 .btn-header:hover {
-    border: 1px solid var(--ny-gray);
-    color: var(--ny-gray);
-    font-weight: 600;
-    background-color: transparent;
+
 }
 
 .nav .nav-logo,
 h1, h2, h3 {
-    font-family: 'Sedgwick Ave Display', cursive;
+    font-family: 'Righteous', cursive;
 }
 
 .section-header {
@@ -114,7 +111,6 @@ h1, h2, h3 {
 }
 /* Navigation */
 .nav {
-    background-color: var(--ny-navy-blue);
     padding: 8px;
 }
 
@@ -122,7 +118,6 @@ h1, h2, h3 {
 .nav .nav-link {
     display: inline-block;
     padding: 4px 8px;
-    color: var(--ny-gray);
 }
 
 .nav .nav-logo {
@@ -130,29 +125,25 @@ h1, h2, h3 {
 }
 
 .nav .nav-logo-alt {
-    color: var(--ny-red);
-    font-size: 4.4rem;
+    font-size: 4rem;
 }
 
 .nav .nav-link {
     font-size: 1.6rem;
-    font-weight: 600;
-    border-radius: 10px;
     padding: 8px 16px;
 }
 
 .nav .nav-link:hover,
 .nav .nav-link-current {
-    background-color: var(--ny-gray);
-    color: var(--ny-navy-blue);
+    font-weight: 600;
+    border-bottom: 2px solid var(--dark);
 }
 
 /* Header */
 .header {
-    background: linear-gradient(rgba(0, 48, 135, 1), rgba(0, 0, 0, 0)), url('../images/hero-img-min.jpg') no-repeat center center/cover;
+    /* background: url('../images/hero-img-min.jpg') no-repeat center/cover; */
     height: 100vh;
     text-align: center;
-    color: var(--ny-gray);
     padding: 12px 24px;
     border-bottom: 1px solid var(--ny-gray);
 }
@@ -163,7 +154,6 @@ h1, h2, h3 {
 
 .header-title-alt {
     font-size: 16rem;
-    color: var(--ny-red);
 }
 
 .header-quote {
@@ -183,10 +173,12 @@ h1, h2, h3 {
 
 .about-left {
     padding: 24px;
-    border: 1px solid var(--ny-gray);
 }
 
-.about-left-img {
+.about-left-img,
+#image {
+    display: block;
+    margin: auto;
     max-width: 100%;
     height: 100%;
 }
@@ -201,7 +193,16 @@ h1, h2, h3 {
     top: 0;
     left: 0;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding-block: 16px;
+}
+
+footer .footer-text {
+    font-size: 16px;
 }
 /* Media Queries */
 @media(min-width: 767px) {
