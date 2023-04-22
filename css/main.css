@@ -71,12 +71,13 @@ img {
     display: inline-block;
     cursor: pointer;
     padding: 12px 24px;
-    border-radius: 10px;
     align-self: center;
 }
 
 .btn-header {
     margin: 0 auto;
+    color: var(--light);
+    background-color: var(--dark);
 }
 
 .btn-primary {
@@ -88,7 +89,9 @@ img {
 }
 
 .btn-header:hover {
-
+    color: var(--dark);
+    background-color: var(--light);
+    border: 1px solid var(--dark);
 }
 
 .nav .nav-logo,
@@ -141,8 +144,6 @@ h1, h2, h3 {
 
 /* Header */
 .header {
-    /* background: url('../images/hero-img-min.jpg') no-repeat center/cover; */
-    height: 100vh;
     text-align: center;
     padding: 12px 24px;
     border-bottom: 1px solid var(--ny-gray);
@@ -153,17 +154,31 @@ h1, h2, h3 {
 }
 
 .header-title-alt {
-    font-size: 16rem;
+    font-size: 15rem;
+}
+
+#image {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    height: 100%;
+}
+
+#img-caption {
+    font-size: 1.8rem;
+    font-weight: 300;
+    font-style: italic;
+    margin-top: 24px;
+}
+
+#img-caption .img-caption-text::before,
+#img-caption .img-caption-text::after {
+    content: "\"";
 }
 
 .header-quote {
     font-size: 2rem;
     font-style: italic;
-}
-
-.header-quote-text::before,
-.header-quote-text::after {
-    content: "\"";
 }
 
 /* About Section */
@@ -173,18 +188,6 @@ h1, h2, h3 {
 
 .about-left {
     padding: 24px;
-}
-
-.about-left-img,
-#image {
-    display: block;
-    margin: auto;
-    max-width: 100%;
-    height: 100%;
-}
-
-.img-caption-text {
-    display: none;
 }
 
 .about-info{
@@ -216,19 +219,6 @@ footer .footer-text {
     .about-left,
     .about-right {
         flex: 1;
-    }
-
-    .img-caption-text {
-        display: block;
-        margin-top: 8px;
-        text-align: center;
-        font-size: 1.2rem;
-        font-style: italic;
-    }
-
-    .img-caption-text::before,
-    .img-caption-text::after {
-        content: "\"";
     }
 
     .about-info {

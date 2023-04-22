@@ -49,12 +49,19 @@
         <h1 id="title" class="header-title">
           I <span class="header-title-alt">&#9829;</span> NY
         </h1>
-        <blockquote class="header-quote">
-          <p class="header-quote-text">
-            A bad day in New York City is still better than a good day anywhere
-            else
-          </p>
-        </blockquote>
+        <figure class="header-img-figure" id="img-div">
+          <img
+            src="images/hero-img-min.jpg"
+            alt="View of the New York skyline"
+            class="header-img"
+            id="image"
+          />
+          <figcaption id="img-caption">
+            <blockquote class="img-caption">
+              <p class="img-caption-text">Keep calm and go to New York</p>
+            </blockquote>
+          </figcaption>
+        </figure>
         <a href="#about" class="header-link btn btn-header">Click Here</a>
       </div>
     </header>
@@ -62,21 +69,7 @@
     <main id="main" class="main">
       <!-- About Section -->
       <section class="section about flex" id="about">
-        <div class="about-left">
-          <figure class="about-left-container" id="img-div">
-            <img
-              src="../images/info-img-min.jpg"
-              alt="Street view of New York"
-              class="about-left-img"
-              id="image"
-            />
-            <figcaption id="img-caption">
-              <blockquote class="img-caption">
-                <p class="img-caption-text">Keep calm and go to New York</p>
-              </blockquote>
-            </figcaption>
-          </figure>
-        </div>
+        <div class="about-left"></div>
         <div class="about-right">
           <article
             class="about-info flex flex-col flex-gap-l"
