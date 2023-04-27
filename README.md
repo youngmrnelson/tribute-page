@@ -2,6 +2,10 @@
 
 This is a web application that aims to replicate the functionality of [https://tribute-page.freecodecamp.rocks](https://tribute-page.freecodecamp.rocks). It is a tribute page that provides information about a subject and includes an image, caption, and link to additional information.
 
+## Live Preview
+
+[https://youngmrnelson.github.io/tribute-page/](https://youngmrnelson.github.io/tribute-page/)
+
 ## User Stories
 
 1. **Main Element**: As a user, I can see a `main` element with a corresponding id of `main`, which contains all other elements of the tribute page.
