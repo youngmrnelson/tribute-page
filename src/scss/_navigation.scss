@@ -1,0 +1,17 @@
+// Navigation
+.nav {
+    &-logo {
+        font-family: 'Righteous', cursive;
+        font-size: 3.2rem;
+    }
+
+    &-link {
+        font-size: 1.6rem;
+
+        &:hover,
+        &-current {
+            font-weight: 600;
+            border-bottom: 2px solid var(--dark);
+        }
+    }
+}

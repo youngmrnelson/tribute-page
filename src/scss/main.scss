@@ -1,25 +1,13 @@
 @use 'reset';
+@use 'layout';
+@use 'typography';
+@use 'utilities';
+@use 'navigation';
 
-/* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
-/* Variables */
-:root {
-    --dark: #333;
-    --light: #f4f4f4;
-}
 /* General */
 html, body {
-    font-size: 62.5%;
     scroll-behavior: smooth;
-    font-family: 'Open Sans', sans-serif;
-    color: var(--dark);
     background-color: var(--light);
-}
-
-a {
-    text-decoration: none;
-    color: var(--dark);
 }
 
 img {
@@ -29,43 +17,6 @@ img {
     justify-content: center;
     align-items: center;
     height: auto;
-}
-/* Utilities */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.section {
-    padding: 46px 12px;
-}
-
-.flex {
-    display: flex;
-}
-
-.flex-nav,
-.flex-article {
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-}
-
-.flex-header {
-    align-items: center;
-    justify-content: center;
-}
-
-.flex-sb {
-    justify-content: space-between;
-}
-
-.flex-col {
-    flex-direction: column;
-}
-
-.flex-gap-l {
-    gap: 32px;
 }
 
 .btn {
@@ -89,7 +40,6 @@ img {
     background-color: var(--light);
 }
 
-.nav .nav-logo,
 h1, h2, h3 {
     font-family: 'Righteous', cursive;
 }
@@ -111,35 +61,6 @@ h1, h2, h3 {
 .section-text {
     font-size: 1.6rem;
     margin-bottom: 12px;
-}
-/* Navigation */
-.nav {
-    padding: 8px;
-}
-
-.nav .nav-logo,
-.nav .nav-link {
-    display: inline-block;
-    padding: 4px 8px;
-}
-
-.nav .nav-logo {
-    font-size: 3.2rem;
-}
-
-.nav .nav-logo-alt {
-    font-size: 4rem;
-}
-
-.nav .nav-link {
-    font-size: 1.6rem;
-    padding: 8px 16px;
-}
-
-.nav .nav-link:hover,
-.nav .nav-link-current {
-    font-weight: 600;
-    border-bottom: 2px solid var(--dark);
 }
 
 /* Header */

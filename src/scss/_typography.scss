@@ -1,0 +1,15 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+// General Styling
+html, body {
+    font-size: 62.5%;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--dark);
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark);
+}
