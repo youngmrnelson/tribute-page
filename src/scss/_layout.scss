@@ -11,6 +11,11 @@
     &-jc--sb {
         justify-content: space-between;
     }
+
+    // FD-C
+    &-fd--c {
+        flex-direction: column;
+    }
 }
 
 // Smartphones
@@ -20,5 +25,15 @@
         &-d--c {
             flex-direction: column;
         }
+    }
+}
+
+// Grid Layout
+.grid {
+    display: grid;
+
+    // RC-1
+    &-rc--1 {
+        grid-template-columns: 1fr;
     }
 }

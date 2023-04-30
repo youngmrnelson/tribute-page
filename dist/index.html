@@ -44,9 +44,9 @@
   <body>
     <!-- Navigation -->
     <nav class="nav p-2">
-      <div class="container m-auto flex flex-ai--c flex-jc--sb">
-        <a href="index.html" class="nav-logo p-1"
-          >I <span class="nav-logo-alt">&#9829;</span> NY</a
+      <div class="container m-auto flex flex-ai--c flex-jc--sb flex-d--c">
+        <a href="index.html" class="nav-logo p-1 mb-1"
+          >I <span class="icon-heart">&#9829;</span> NY</a
         >
         <ul class="nav-links flex gap-2">
           <li>
@@ -73,31 +73,34 @@
       </div>
     </nav>
     <!-- Main Content -->
-    <main id="main" class="main">
+    <main id="main" class="main my-4">
       <!-- Header -->
-      <header class="header">
-        <div class="container flex flex-col flex-gap-l">
-          <h1 id="title" class="header-title">
-            I <span class="header-title-alt">&#9829;</span> NY
+      <header class="header ta-c">
+        <div class="container m-auto p-2 grid grid-rc--1 gap-3">
+          <h1 id="title" class="h-main">
+            I <span class="icon-heart">&#9829;</span> NY
           </h1>
           <figure class="header-img-figure" id="img-div">
             <img
               src="images/hero-img-min.jpg"
               alt="View of the New York skyline"
-              class="header-img"
+              class="img img-header m-auto p-2"
               id="image"
             />
             <figcaption id="img-caption">
-              <blockquote class="img-caption">
-                <p class="img-caption-text">Keep calm and go to New York</p>
+              <blockquote class="img-caption my-3">
+                <p class="quote quote-main">Keep calm and go to New York</p>
               </blockquote>
             </figcaption>
           </figure>
-          <a href="#about" class="btn btn-primary">Click Here</a>
+          <a href="#about" class="btn btn-primary m-auto"
+            >Learn About New York
+            <i class="fa-sharp fa-solid fa-circle-chevron-down ml-1"></i
+          ></a>
         </div>
       </header>
       <!-- About Section -->
-      <section class="section flex" id="about">
+      <section class="section flex my-4" id="about">
         <div class="about-left flex flex-header">
           <img
             src="images/info-img-min.jpg"
@@ -142,7 +145,7 @@
       </section>
     </main>
     <!-- Footer -->
-    <footer>
+    <footer class="footer ta-c p-2">
       <p class="footer-text">
         Created by
         <a

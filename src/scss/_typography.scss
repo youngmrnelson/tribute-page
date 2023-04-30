@@ -13,3 +13,41 @@ a {
     text-decoration: none;
     color: var(--dark);
 }
+
+h1, h2, h3 {
+    font-family: 'Righteous', cursive;
+}
+
+// Icons
+.icon {
+    &-heart {
+        color: #c92a2a;
+    }
+}
+
+// Headers
+.h {
+    &-main {
+        font-size: 12rem;
+    }
+}
+
+// Quotes
+.quote {
+    &::before,
+    &::after {
+        content: '"';
+    }
+    &-main {
+        font-size: 1.8rem;
+        font-style: italic;
+        font-weight: 300;
+    }
+}
+
+// Footer Text
+.footer {
+    &-text {
+        font-size: 1.6rem;
+    }
+}
