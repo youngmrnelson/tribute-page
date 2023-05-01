@@ -5,9 +5,3 @@
 @use 'components';
 @use 'navigation';
 @use 'images';
-
-/* General */
-html, body {
-    scroll-behavior: smooth;
-    background-color: var(--light);
-}

@@ -94,5 +94,10 @@
     &-block {
         border-top: 2px solid var(--dark);
         border-bottom: 2px solid var(--dark);
+
+        &-bold {
+            border-top: 4px solid var(--dark);
+            border-bottom: 4px solid var(--dark);
+        }
     }
 }
