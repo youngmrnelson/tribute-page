@@ -36,4 +36,17 @@
     &-rc--1 {
         grid-template-columns: 1fr;
     }
+
+    &-rc--2 {
+        grid-template-columns: repeat(2, 1fr);
+
+        @media(max-width: 767px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    // GC-Full
+    &-gc--full {
+        grid-column: 1 / -1;
+    }
 }

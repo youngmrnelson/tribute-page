@@ -30,6 +30,17 @@ h1, h2, h3 {
     &-main {
         font-size: 12rem;
     }
+
+    &-secondary {
+        font-size: 3rem;
+    }
+}
+
+// Paragraphs
+.p {
+    &-main {
+        font-size: 1.8rem;
+    }
 }
 
 // Quotes

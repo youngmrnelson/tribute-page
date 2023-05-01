@@ -7,4 +7,19 @@
     &-header {
         width: 80%;
     }
+
+    &-about {
+        @media(max-width: 767px) {
+            display: none;
+        }
+        
+        &-alt {
+            filter: grayscale(1);
+            clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+
+            @media(max-width: 767px) {
+                display: none;
+            }
+        }
+    }
 }
