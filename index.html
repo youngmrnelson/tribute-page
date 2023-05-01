@@ -45,10 +45,12 @@
     <!-- Navigation -->
     <nav class="nav p-2">
       <div class="container m-auto flex flex-ai--c flex-jc--sb flex-d--c">
+        <!-- Nav Logo -->
         <a href="index.html" class="nav-logo p-1 mb-1"
           >I <span class="icon-heart">&#9829;</span> NY</a
         >
-        <ul class="nav-links flex gap-2">
+        <!-- Nav Links -->
+        <ul class="nav-links flex gap-3 flex-d--c flex-ai--c">
           <li>
             <a href="#about" class="nav-link p-1 nav-link-current">About</a>
           </li>
@@ -77,9 +79,11 @@
       <!-- Header -->
       <header class="header ta-c">
         <div class="container m-auto p-2 grid grid-rc--1 gap-3">
+          <!-- Header Title -->
           <h1 id="title" class="h-main">
             I <span class="icon-heart">&#9829;</span> NY
           </h1>
+          <!-- Header Image & Quote -->
           <figure class="header-img-figure" id="img-div">
             <img
               src="images/hero-img-min.jpg"
@@ -93,6 +97,7 @@
               </blockquote>
             </figcaption>
           </figure>
+          <!-- Header Button -->
           <a href="#about" class="btn btn-primary m-auto"
             >Learn About New York
             <i class="fa-sharp fa-solid fa-circle-chevron-down ml-1"></i
@@ -100,47 +105,87 @@
         </div>
       </header>
       <!-- About Section -->
-      <section class="section flex my-4" id="about">
-        <div class="about-left flex flex-header">
-          <img
-            src="images/info-img-min.jpg"
-            alt="Street view of New York"
-            class="about-img"
-          />
-        </div>
-        <div class="about-right">
-          <article
-            class="about-info flex flex-col flex-gap-l"
-            id="tribute-info"
-          >
-            <header class="section-header">
-              <h2 class="section-header-text">The City That Never Sleeps</h2>
-            </header>
-            <p class="section-text">
-              New York, often referred to as the "Big Apple," is one of the most
-              iconic and diverse cities in the world. Located in the
-              northeastern United States, it is a bustling metropolis that never
-              sleeps, and it is known for its vibrant energy, fast pace, and
-              cultural richness.
-            </p>
-            <p class="section-text">
-              The city is a melting pot of cultures and ethnicities, with a rich
-              tapestry of communities from all over the world. This diversity is
-              reflected in the cuisine, arts, and traditions of New York, making
-              it a true cultural hub. From savoring a slice of classic New York
-              pizza, to exploring the museums and galleries of the Museum Mile,
-              or experiencing the vibrant street art scene in neighborhoods like
-              Brooklyn and Queens, there's something for everyone in this
-              cosmopolitan city.
-            </p>
-            <a
-              href="https://www.nyc.gov/"
-              target="_blank"
-              class="btn btn-primary"
-              id="tribute-link"
-              >Learn More About NY</a
-            >
-          </article>
+      <section class="section my-4" id="about">
+        <div class="container p-2 m-auto grid grid-rc--2 gap-3">
+          <!-- About Image -->
+          <figure class="about-img-container flex flex-ai--c">
+            <img
+              src="images/info-img-min.jpg"
+              alt="Street view of New York"
+              class="img img-about m-auto"
+            />
+          </figure>
+          <!-- About Info -->
+          <div class="about-info-container">
+            <article class="about-info flex flex-fd--c" id="tribute-info">
+              <header class="section-header ta-c border-block mb-3">
+                <h2 class="h-secondary py-1">The City That Never Sleeps</h2>
+              </header>
+              <p class="p p-main mb-2">
+                New York, often referred to as the "Big Apple," is one of the
+                most iconic and diverse cities in the world. Located in the
+                northeastern United States, it is a bustling metropolis that
+                never sleeps, and it is known for its vibrant energy, fast pace,
+                and cultural richness.
+              </p>
+              <p class="p p-main mb-2">
+                The city is a melting pot of cultures and ethnicities, with a
+                rich tapestry of communities from all over the world. This
+                diversity is reflected in the cuisine, arts, and traditions of
+                New York, making it a true cultural hub. From savoring a slice
+                of classic New York pizza, to exploring the museums and
+                galleries of the Museum Mile, or experiencing the vibrant street
+                art scene in neighborhoods like Brooklyn and Queens, there's
+                something for everyone in this cosmopolitan city.
+              </p>
+              <a
+                href="https://www.nyc.gov/"
+                target="_blank"
+                class="btn btn-primary m-auto"
+                id="tribute-link"
+                >Learn More About NY
+                <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i
+              ></a>
+            </article>
+          </div>
+          <!-- About Images -->
+          <div class="about-images-container grid-gc--full flex gap-2 mt-3">
+            <figure class="img-about-alt-container">
+              <img
+                src="images/brooklyn/brooklyn-secondary-min.jpg"
+                alt="Brooklyn"
+                class="img img-about-alt"
+              />
+            </figure>
+            <figure class="img-about-alt-container">
+              <img
+                src="images/manhattan/manhattan-secondary-min.jpg"
+                alt="Manhattan"
+                class="img img-about-alt"
+              />
+            </figure>
+            <figure class="img-about-alt-container">
+              <img
+                src="images/the-bronx/the-bronx-secondary-min.jpg"
+                alt="The Bronx"
+                class="img img-about-alt"
+              />
+            </figure>
+            <figure class="img-about-alt-container">
+              <img
+                src="images/queens/queens-secondary-min.jpg"
+                alt="Queens"
+                class="img img-about-alt"
+              />
+            </figure>
+            <figure class="img-about-alt-container">
+              <img
+                src="images/staten-island/staten-island-secondary-min.jpg"
+                alt="Staten Island"
+                class="img img-about-alt"
+              />
+            </figure>
+          </div>
         </div>
       </section>
     </main>
